@@ -26,7 +26,7 @@
     "lint:engines": "ls-engines",
     "lint:publish": "publint --strict",
     "lint": "concurrently npm:lint:* --prefixColors auto",
-    "clean": "rimraf --glob ./{lib,tests}/**/*.{d.ts,js}",
+    "clean": "rimraf --glob ./{bin,lib,test}/**/*.{d.ts,js}",
     "prebuild": "npm run clean",
     "build": "tsc",
     "watch": "tsc -w",
