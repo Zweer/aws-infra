@@ -23,7 +23,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           cache: npm
-          node-version: lts
+          node-version: lts/*
           registry-url: 'https://npm.pkg.github.com'
           scope: '@zweer'
 
