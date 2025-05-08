@@ -31,5 +31,5 @@ export default antfu({
     }],
   },
 }, {
-  ignores: ['cdk-out/*'],
+  ignores: ['cdk.out/*'],
 });
