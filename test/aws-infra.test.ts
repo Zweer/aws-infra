@@ -1,17 +1,14 @@
-// import * as cdk from 'aws-cdk-lib';
-// import { Template } from 'aws-cdk-lib/assertions';
-// import * as AwsInfra from '../lib/aws-infra-stack';
+import { App } from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
 
-// example test. To run these tests, uncomment this file along with the
-// example resource in lib/aws-infra-stack.ts
-it('sQS Queue Created', () => {
-//   const app = new cdk.App();
-//     // WHEN
-//   const stack = new AwsInfra.AwsInfraStack(app, 'MyTestStack');
-//     // THEN
-//   const template = Template.fromStack(stack);
+import { AwsInfraStack } from '../lib/aws-infra-stack';
 
-//   template.hasResourceProperties('AWS::SQS::Queue', {
-//     VisibilityTimeout: 300
-//   });
+describe('aws infra stack', () => {
+  it('should match snapshot', () => {
+    const app = new App();
+    const stack = new AwsInfraStack(app, 'AwsInfraStack');
+
+    const template = Template.fromStack(stack);
+    expect(template.toJSON()).toMatchSnapshot();
+  });
 });
