@@ -35,8 +35,7 @@
     "cdk": "cdk"
   },
   "publishConfig": {
-    "access": "restricted",
-    "provenance": true
+    "registry": "https://npm.pkg.github.com"
   },
   "lockfile-lint": {
     "path": "package-lock.json",
