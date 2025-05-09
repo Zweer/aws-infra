@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Zweer/aws-infra/compare/v1.0.1...v1.0.2) (2025-05-09)
+
+
+### Performance Improvements
+
+* **dns:** :sparkles: Trigger release after few errors ([3a80cab](https://github.com/Zweer/aws-infra/commit/3a80cab14d56fb6147855d5759fe9239930d3157))
+
 ## [1.0.1](https://github.com/Zweer/aws-infra/compare/v1.0.0...v1.0.1) (2025-05-09)
 
 
