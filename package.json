@@ -34,6 +34,10 @@
     "test": "jest",
     "cdk": "cdk"
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "lockfile-lint": {
     "path": "package-lock.json",
     "type": "npm",
