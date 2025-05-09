@@ -34,9 +34,6 @@
     "test": "jest",
     "cdk": "cdk"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "lockfile-lint": {
     "path": "package-lock.json",
     "type": "npm",
