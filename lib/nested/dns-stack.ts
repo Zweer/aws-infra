@@ -1,4 +1,5 @@
-import type { NestedStackProps } from 'aws-cdk-lib';
+import type { NestedStackProps, Stack } from 'aws-cdk-lib';
+import type { IPublicHostedZone } from 'aws-cdk-lib/aws-route53';
 import type { Construct } from 'constructs';
 
 import { NestedStack } from 'aws-cdk-lib';
@@ -7,6 +8,12 @@ import { pascalCase } from 'change-case';
 
 export class DnsStack extends NestedStack {
   static readonly ZONE_NAME = 'olivieriachille.com';
+
+  static retrieveHostedZone(stack: Stack): IPublicHostedZone {
+    return PublicHostedZone.fromLookup(stack, 'HostedZone', {
+      domainName: DnsStack.ZONE_NAME,
+    });
+  }
 
   readonly hostedZone: PublicHostedZone;
 
