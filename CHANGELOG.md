@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Zweer/aws-infra/compare/v1.0.0...v1.0.1) (2025-05-09)
+
+
+### Performance Improvements
+
+* **dns:** :sparkles: Exposing the PublicZone retrieval ([bad85ed](https://github.com/Zweer/aws-infra/commit/bad85ed24a7a43388895c271317614e8b1110645))
+
 # 1.0.0 (2025-05-08)
 
 
