@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Zweer/aws-infra/compare/v1.0.2...v1.0.3) (2025-05-09)
+
+
+### Performance Improvements
+
+* **dns:** ✨ Trigger release after few errors ([62fbef3](https://github.com/Zweer/aws-infra/commit/62fbef339948b32c299b354f58ee58d7ed367e95))
+
 ## [1.0.2](https://github.com/Zweer/aws-infra/compare/v1.0.1...v1.0.2) (2025-05-09)
 
 

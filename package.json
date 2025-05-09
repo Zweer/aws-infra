@@ -1,7 +1,7 @@
 {
   "name": "@zweer/aws-infra",
   "type": "commonjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AWS infrastructure as code using AWS CDK",
   "author": "Niccolò Olivieri Achille <n.olivieriachille@gmail.com>",
   "license": "MIT",
