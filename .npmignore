@@ -1,8 +1,0 @@
-*.ts
-!*.d.ts
-
-./tests
-
-# CDK asset staging directory
-.cdk.staging
-cdk.out

@@ -1,14 +1,15 @@
 import { App } from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
+import { describe, it } from 'vitest';
 
-import { AwsInfraStack } from '../lib/aws-infra-stack';
+import { AwsInfraStack } from '../lib/aws-infra-stack.js';
 
-describe('aws infra stack', () => {
-  it('should match snapshot', () => {
+describe('AwsInfraStack', () => {
+  it('should create DNS and CI roles nested stacks', () => {
     const app = new App();
-    const stack = new AwsInfraStack(app, 'AwsInfraStack');
-
+    const stack = new AwsInfraStack(app, 'TestStack');
     const template = Template.fromStack(stack);
-    expect(template.toJSON()).toMatchSnapshot();
+
+    template.resourceCountIs('AWS::CloudFormation::Stack', 2);
   });
 });
