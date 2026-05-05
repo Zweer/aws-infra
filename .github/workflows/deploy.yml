@@ -39,7 +39,7 @@ jobs:
       - uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-          aws-region: eu-west-1
+          aws-region: ${{ vars.AWS_REGION }}
 
       - run: npm ci
       - run: npm run deploy
