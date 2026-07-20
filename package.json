@@ -23,9 +23,9 @@
     "diff": "cdk diff"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.252.0",
+    "aws-cdk-lib": "2.261.0",
     "change-case": "5.4.4",
-    "constructs": "10.6.0"
+    "constructs": "10.7.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.14",
